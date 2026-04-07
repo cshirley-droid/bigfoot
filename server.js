@@ -7,7 +7,10 @@ import { BigfootGame } from './src/Game.js';
 
 const server = Server({
   games: [BigfootGame],
-  origins: ['https://bigfoot-game.pages.dev'], 
+  origins: [
+    'https://bigfoot-card-game.pages.dev',
+    'http://localhost:5173' // Keeping this here just in case you ever want to test locally again!
+  ], 
 });
 
 const PORT = process.env.PORT || 8000;
