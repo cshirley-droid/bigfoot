@@ -7,7 +7,7 @@ import { BigfootGame } from './src/Game.js';
 
 const server = Server({
   games: [BigfootGame],
-  origins: [Origins.LOCALHOST], 
+  origins: ['*'], 
 });
 
 const PORT = process.env.PORT || 8000;
